@@ -1,5 +1,7 @@
 import React from 'react';
 import {
+    HomeWrapper,
+    HomeTop,
     HomePage,
     TopHome,
     HomeTitle,
@@ -8,6 +10,15 @@ import {
     HomeLogo,
     Images1,
     HomeAgancy,
+    HomeLadipage,
+    LadipageMenu,
+    LadipageImage,
+    LadiPageContent,
+    HomeBottom,
+    HomeSides,
+    HomeLeftSide,
+    HomeRightSide,
+
 } from './HomeStyle';
 
 import HomeImages from './Images/HomeImg.svg';
@@ -31,10 +42,17 @@ import Image7 from './Images/image 2.7.svg';
 import Image8 from './Images/image 2.8.svg';
 import Image9 from './Images/image 2.9.svg';
 
+import Ladipage2 from './Images/ladipage2.svg';
+import ArrowRight from './Images/arrowRight.svg';
+ 
+// home bottom images
+import Frame from './Images/Frame.svg';
 
 export const Home = () =>{
     return(
         <>
+            <HomeWrapper>
+            <HomeTop>
             <HomePage>
                <TopHome>
                 <HomeTitle>
@@ -63,27 +81,27 @@ export const Home = () =>{
                             <img src={Sunhouse} alt="" />
                         </div>
                         <div>
-                            <img src={Ladipage} alt="" />
+                            <img src={Ladipage} alt="Ladipage" />
                         </div>
                         <div>
-                            <img src={Adidas} alt="" />
+                            <img src={Adidas} alt="Adidas" />
                         </div>
                         <div>
-                            <img src={Saffron} alt="" />
+                            <img src={Saffron} alt="Saffron" />
                         </div>
                         
                        <div>
-                        <img src={MrSimple} alt="" />
+                        <img src={MrSimple} alt="MrSimple" />
                        </div>
                         
                        <div>
-                            <img src={LogoMible} alt="" />
+                            <img src={LogoMible} alt="LogoMible" />
                        </div>
                         <div>
-                            <img src={Kangaro} alt="" />
+                            <img src={Kangaro} alt="Kangaro" />
                         </div>
                         <div>
-                           <img src={Crazyteen} alt="" />
+                           <img src={Crazyteen} alt="Crazyteen" />
                         </div>
                     </Images1>
                     {/* <Images2>
@@ -140,6 +158,84 @@ export const Home = () =>{
                     </div>
                 </HomeAgancy>
             </HomePage>
+            </HomeTop>
+            <HomeLadipage>
+                <span className="circle_1"></span>
+                <span className="circle_2"></span>
+                <span className="circle_3"></span>
+                <LadipageMenu>
+                    <LadipageImage>
+                        <img src={Ladipage2} alt="ladipage" />
+                        <LadiPageContent>
+                            <h2>Ladipage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Mauris suscipit eget...</p>
+                            <span>Đọc tiếp <img src={ArrowRight} alt="arrowRight" /></span>
+                        </LadiPageContent>
+                    </LadipageImage>
+                    <LadipageImage>
+                        <img src={Ladipage2} alt="ladipage" />
+                        <LadiPageContent>
+                            <h2>Ladipage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Mauris suscipit eget...</p>
+                            <span>Đọc tiếp <img src={ArrowRight} alt="arrowRight" /></span>
+                        </LadiPageContent>
+                    </LadipageImage>
+                    <LadipageImage>
+                        <img src={Ladipage2} alt="ladipage" />
+                        <LadiPageContent>
+                            <h2>Ladipage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Mauris suscipit eget...</p>
+                            <span>Đọc tiếp <img src={ArrowRight} alt="arrowRight" /></span>
+                        </LadiPageContent>
+                    </LadipageImage>
+                    <LadipageImage>
+                        <img src={Ladipage2} alt="ladipage" />
+                        <LadiPageContent>
+                            <h2>Ladipage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Mauris suscipit eget...</p>
+                            <span>Đọc tiếp <img src={ArrowRight} alt="arrowRight" /></span>
+                        </LadiPageContent>
+                    </LadipageImage>
+                    <LadipageImage>
+                        <img src={Ladipage2} alt="ladipage" />
+                        <LadiPageContent>
+                            <h2>Ladipage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Mauris suscipit eget...</p>
+                            <span>Đọc tiếp <img src={ArrowRight} alt="arrowRight" /></span>
+                        </LadiPageContent>
+                    </LadipageImage>
+                    <LadipageImage>
+                        <img src={Ladipage2} alt="ladipage" />
+                        <LadiPageContent>
+                            <h2>Ladipage</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br/> adipiscing elit. Mauris suscipit eget...</p>
+                            <span>Đọc tiếp <img src={ArrowRight} alt="arrowRight" /></span>
+                        </LadiPageContent>
+                    </LadipageImage>
+                    
+                </LadipageMenu>
+                <div className="carousel">
+                    <span className=" active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </HomeLadipage>
+            <HomeBottom>
+                <HomeSides>
+                    <HomeLeftSide>
+                        <img src={Frame} alt="frame" />
+                    </HomeLeftSide>
+                    <HomeRightSide>
+                        <h2>Đăng ký dùng thử ngay hôm nay</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus nulla risus pellentesque egestas. Netus elementum erat posuere arcu. Augue nam consectetur turpis lobortis porta eget ipsum in.</p>
+                        <Button type="submit">
+                            Dùng thử miễn phí
+                        </Button>
+                    </HomeRightSide>
+                </HomeSides>
+            </HomeBottom>
+            </HomeWrapper>
         </>
     )
 }

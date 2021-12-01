@@ -33,9 +33,9 @@ export const Navbar = () =>{
                         </div>
                         <ul>
                             <li><Link to="/">Tính năng</Link></li>
-                            <li><Link to="/">Bảng giá</Link></li>
-                            <li><Link to="/">Công ty</Link></li>
-                            <li><Link to="/">Tài nguyên</Link></li>
+                            <li><Link to="/about">Bảng giá</Link></li>
+                            <li><Link to="/cong">Công ty</Link></li>
+                            <li><Link to="/tin">Tài nguyên</Link></li>
                         </ul>
                         <button type="submit">Send</button>
                     </HeaderLogoMenu>

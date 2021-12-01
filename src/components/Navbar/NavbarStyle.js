@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    
+    padding:0 calc((100vw - 1300px) / 2);
+    background-color:#E5E5E5;
 `
 export const HeaderNavMenu = styled.div`
     padding:1rem;
